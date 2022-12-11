@@ -11,18 +11,27 @@
     <title>Password Generator</title>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Generate a</h1>
-            <h2>random password</h2>
-            <h3>Never use an insecure password again.</h3>
-        </header>
-        <section>
-            <button id="pswbtn">Generate passwords</button>
-        </section>
-        <section>
-            <button id="password1">pass1</button>
-            <button id="password2">pass2</button>
+    <div class="wrapper">
+        <section class="card">
+            <header>
+                <h1>Generate a</h1>
+                <h2>random password</h2>
+                <p>Never use an insecure password again.</p>
+            </header>
+            <section class="generator">
+                <button id="pswbtn">Generate passwords</button>
+            </section>
+            <section class="adjustments">
+                <p id="pswadjustment">Adjust password length: 15</p>
+                <input type="range" id="pswlength" min="0" max="20" value="15" step="1" />
+            </section>    
+            <section class="result">
+                <input type="text" id="password1" readonly>
+                <input type="text" id="password2" readonly>
+            </section>
+            <section class="message hidden">
+                <p class="pswcopied">Password Copied!</p>
+            </section>
         </section>
     </div>
 

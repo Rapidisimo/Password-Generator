@@ -11,22 +11,87 @@ body {
     font-weight: 400;
 }
 
-.container {
+.wrapper {
     margin: 4rem auto 0;
-    max-width: 800px;
+    max-width: 550px;
+    min-height: 550px;
     padding: 2rem;
     background-color: #ECFDF5;
+    display: grid;
+    place-items: center;
+}
+.card {
+    display: grid;
+    
 }
 
 h1, h2 {
     font-family: 'Karla', sans-serif;
     font-size: 2.2rem;
     font-weight: 800;
-    line-height: 1.4;
+    line-height: 1;
 }
 h1 {
     color: #333;
 }
 h2 {
     color: #10B981;
+    margin-bottom: 1rem;
+}
+header p {
+    color: #6B7280;
+    font-size: 1.25rem;
+}
+
+header {
+    margin-bottom: 4.25rem;
+}
+
+button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+#pswbtn {
+    background-color: #10B981;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: .875rem 1.4rem;
+    border-radius: 10px;
+}
+
+.generator {
+    padding-bottom: 1.625rem;
+    border-bottom: 1px solid #D5D4D8;
+}
+
+.adjustments {
+    display: grid;
+    margin: 2.125rem 0;
+    padding-bottom: 1.625rem;
+    border-bottom: 1px solid #D5D4D8;
+
+}
+
+.result input {
+    border: none;
+    background-color: #273549;
+    color: #5DEF92;
+    font-size: 1rem;
+    text-align: center;
+    padding: .6rem .2rem;
+    border-radius: 5px;
+}
+#password1 {
+    margin-right: 1.2rem;
+}
+
+.message {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.hidden {
+    display: none;
 }
