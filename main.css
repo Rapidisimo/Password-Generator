@@ -73,6 +73,10 @@ button {
     border-bottom: 1px solid #D5D4D8;
 
 }
+.result {
+    display: grid;
+    gap: 1rem;
+}
 
 .result input {
     border: none;
@@ -83,8 +87,11 @@ button {
     padding: .6rem .2rem;
     border-radius: 5px;
 }
-#password1 {
-    margin-right: 1.2rem;
+
+#password1,
+#password2,
+#pswbtn {
+    cursor: pointer;
 }
 
 .message {
@@ -94,4 +101,12 @@ button {
 }
 .hidden {
     display: none;
+}
+
+@media (min-width: 768px) {
+    .result {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }    
 }
